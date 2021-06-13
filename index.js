@@ -25,7 +25,7 @@ app.get('/portaljson',(req,res) => {
         res.json(response.data);
       })
       .catch((err)=> {
-        res.send(err);
+        res.status(502).send(err);
       })
 })
 
